@@ -47,6 +47,7 @@ footer li {
   display: inline-block;
   padding: 0px 7px;
 }
+/*-----My skills css----*/
 
 .flex-container {
   display: flex;
@@ -112,7 +113,7 @@ h1 {
 
 
 
-/*----New css------*/
+/*----New css for my work------*/
 
 #my-work {
   display: grid;
@@ -186,4 +187,61 @@ h1 {
 
 .button:hover {
   background-color: #005fa3;
+}/* Default styles for all screen sizes */
+.case-study {
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
 }
+
+.case-study-img {
+  margin-right: 20px;
+}
+
+.case-study-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.case-study-info h2, 
+.case-study-info p, 
+.case-study-info a.button {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 767px) {
+  .case-study {
+    flex-direction: column; /* stack the image and info vertically */
+    width: 100%; /* make the case study full width */
+  }
+  
+  .case-study-img {
+    margin-right: 0; /* remove the margin from the right of the image */
+    margin-bottom: 10px; /* add a margin to the bottom of the image */
+  }
+  
+  .case-study-info {
+    align-items: center; /* center the text and button horizontally */
+    text-align: center; /* center the text horizontally */
+  }
+}
+
+/* Media query for tablet screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .case-study {
+    width: 80vw; /* make the case study 80% of the viewport width */
+  }
+}
+
+/* Media query for desktop screens */
+@media screen and (min-width: 1024px) {
+  .case-study {
+    width: 600px;
+  }
+}
+
+
+
