@@ -47,3 +47,143 @@ footer li {
   display: inline-block;
   padding: 0px 7px;
 }
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+h1 {
+  text-align: center;
+}
+  
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
+  height: 300px;
+}
+
+.skill-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill-desc {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+/*----New css------*/
+
+#my-work {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  padding: 50px;
+  max-width: 100%;
+}
+
+#my-work h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.case-study {
+  max-height: 250px;
+  width: 50vw;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.case-study-img {
+  overflow: hidden;
+  max-height: 100%;
+  margin-right:20px;
+  max-width: calc(100% / 3);
+}
+
+.case-study-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case-study-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  max-height: 100%;
+  max-width: calc(2 * 100% / 3 - 20px);
+  overflow: auto;
+}
+
+.case-study-info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.case-study-info p {
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  width: auto;
+}
+
+.button:hover {
+  background-color: #005fa3;
+}
